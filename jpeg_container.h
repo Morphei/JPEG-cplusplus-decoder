@@ -9,7 +9,13 @@ class Jpeg_container
 {
 public:
     Jpeg_container();
+
+    int jpeg_save_to_file(char *filename);
     void jpeg_load_from_file(char *filename);
+
+    unsigned char* get_pixels();
+    int get_width();
+    int get_height();
 
 private:
     unsigned char *pixel_array;

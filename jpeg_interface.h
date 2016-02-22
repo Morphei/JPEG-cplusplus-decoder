@@ -20,6 +20,7 @@ struct ImageData {
    };
 
 struct ImageData read_JPEG_file(char * filename);
+int write_JPEG_file(char* filename,  struct ImageData image);
 
 
 
